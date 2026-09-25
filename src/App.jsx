@@ -101,7 +101,7 @@ function App() {
     const nextStatus = target.status === "Completed" ? "To Do" : "Completed";
     toggleTask(id);
     showToast(
-      nextStatus === "Completed" ? "Task completed" : "Task moved to to do",
+      nextStatus === "Completed" ? "Task completed" : "Task moved to To-Do",
       target.title,
       nextStatus === "Completed" ? TOAST_TYPES.SUCCESS : TOAST_TYPES.WARNING,
     );
